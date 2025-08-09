@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impact Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Impact Quiz</h1>
+    <p class="intro">Descubra qual é o seu perfil de impacto no mundo respondendo às perguntas abaixo.</p>
+
+    <form id="quizForm">
+      <div class="question-step active">
+        <fieldset>
+          <legend>1. Se tivesse um orçamento para um projeto comunitário, escolheria investir em...</legend>
+          <label><input type="radio" name="q1" value="social" required /> Programas de capacitação para pessoas em situação de vulnerabilidade.</label>
+          <label><input type="radio" name="q1" value="cultural" /> Oficinas de arte e música para jovens da comunidade.</label>
+          <label><input type="radio" name="q1" value="ambiental" /> Projetos de reflorestamento e proteção de nascentes.</label>
+        </fieldset>
+        <button type="button" class="btn next">Próxima</button>
+      </div>
+
+      <div class="question-step">
+        <fieldset>
+          <legend>2. Diante de uma festa ou evento local, você preferiria...</legend>
+          <label><input type="radio" name="q2" value="ambiental" required /> Garantir que toda a decoração e materiais sejam reutilizáveis ou recicláveis.</label>
+          <label><input type="radio" name="q2" value="social" /> Usar o evento para arrecadar fundos para causas sociais.</label>
+          <label><input type="radio" name="q2" value="cultural" /> Convidar artistas e grupos culturais regionais para se apresentarem.</label>
+        </fieldset>
+        <button type="button" class="btn next">Próxima</button>
+      </div>
+
+      <div class="question-step">
+        <fieldset>
+          <legend>3. Na sua rotina de consumo, o que mais influencia suas escolhas?</legend>
+          <label><input type="radio" name="q3" value="cultural" required /> Apoiar marcas que valorizam a identidade cultural e produzem localmente.</label>
+          <label><input type="radio" name="q3" value="ambiental" /> Optar por produtos com certificação ambiental e baixa pegada de carbono.</label>
+          <label><input type="radio" name="q3" value="social" /> Comprar de empresas que praticam comércio justo e inclusão social.</label>
+        </fieldset>
+        <button type="button" class="btn next">Próxima</button>
+      </div>
+
+      <div class="question-step">
+        <fieldset>
+          <legend>4. Se pudesse implementar uma política pública, ela priorizaria...</legend>
+          <label><input type="radio" name="q4" value="social" required /> Redução da desigualdade social e acesso universal à educação.</label>
+          <label><input type="radio" name="q4" value="cultural" /> Preservação e difusão do patrimônio histórico e cultural.</label>
+          <label><input type="radio" name="q4" value="ambiental" /> Ações de preservação ambiental e incentivo às energias renováveis.</label>
+        </fieldset>
+        <button type="button" class="btn next">Próxima</button>
+      </div>
+
+      <div class="question-step">
+        <fieldset>
+          <legend>5. Ao comemorar uma conquista pessoal, você...</legend>
+          <label><input type="radio" name="q5" value="ambiental" required /> Organiza um plantio coletivo de árvores para marcar a data.</label>
+          <label><input type="radio" name="q5" value="cultural" /> Promove um evento com música, dança e gastronomia típica.</label>
+          <label><input type="radio" name="q5" value="social" /> Faz uma ação solidária em benefício de uma instituição.</label>
+        </fieldset>
+        <button type="submit" class="btn">Ver meu resultado</button>
+      </div>
+    </form>
+
+    <section id="countdown" class="hidden">
+      <h2>Calculando seu perfil...</h2>
+      <p id="timer">3</p>
+    </section>
+
+    <section id="result" class="hidden">
+      <h2>Seu Perfil de Impacto</h2>
+      <p id="summary"></p>
+      <button id="restart" class="btn secondary">Refazer Quiz</button>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
